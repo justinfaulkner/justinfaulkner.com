@@ -29,6 +29,10 @@ body {
   width: 100%;
   height: 90px;
   background-color: #31473d;
+  color: #64816c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header .content {
@@ -107,6 +111,9 @@ h2 {
 }
 
 a {
-  color: #64816d;
   text-decoration: underline;
+}
+
+strong {
+  color: #558161;
 }
