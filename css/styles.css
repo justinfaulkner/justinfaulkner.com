@@ -74,8 +74,6 @@ h2 {
 
 .entry {
   padding: 0.5em 0.65em;
-
-  border-radius: 7px;
 }
 
 .entry:not(:last-child) {
@@ -133,6 +131,10 @@ strong {
   vertical-align: middle;
 }
 
+.print-only {
+  display: none;
+}
+
 @media print {
   body {
     font-size: 10px;
@@ -143,15 +145,21 @@ strong {
   }
 
   .header {
-    padding-top: 1.5em;
+    padding-top: 2em;
+    background-color: white;
+    padding-bottom: 0.25em;
+  }
+
+  .header-border {
+    height: 7px;
   }
 
   h1 {
-    font-size: 2em;
+    font-size: 3em;
   }
 
   h2 {
-    font-size: 1.25em;
+    font-size: 1em;
     margin-bottom: 0.5em;
   }
 
@@ -164,6 +172,18 @@ strong {
   }
 
   .email-image {
-    width: 125px;
+    width: 110px;
+  }
+
+  .sections dd {
+    margin-bottom: 0.75em;
+  }
+
+  .entry:not(:last-child) {
+    margin-bottom: 0.75em;
+  }
+
+  .print-only {
+    display: block;
   }
 }
