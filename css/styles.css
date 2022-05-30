@@ -1,6 +1,4 @@
 body {
-  /* background-color: #556672;
-  color: #dadedf; */
   font-size: 18px;
   line-height: 1.33;
 }
@@ -84,43 +82,35 @@ h2 {
   margin-bottom: 1em;
 }
 
-.clickable.entry:hover {
-  cursor: pointer;
-  /* background-color: #f5f5f5; */
-}
-
-.clickable.entry:hover .more {
-  /* background-color: #f0f0f0; */
-  background-color: #ffe689;
-  animation: pulse 2s infinite;
-}
-
 .project-tools {
   font-style: italic;
 }
 
 .more {
   display: inline-block;
-  background-color: #c8e6cf;
+  background-color: #d8f7e1;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 13px;
+  font-size: 0.72em;
   font-style: normal;
-  border-radius: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-left: 5px;
-  line-height: 20px;
-  /* box-shadow: 0 0 0 0 rgba(0, 0, 0, 1); */
-  box-shadow: 0 0 0 0 rgba(255, 230, 137, 1);
+  border-radius: 0.22em;
+  padding-left: 0.28em;
+  padding-right: 0.28em;
+  margin-left: 0.28em;
+  line-height: 1.1em;
   transform: scale(1);
+  cursor: pointer;
+}
+
+.more:hover {
+  background-color: #ffe188;
+  animation: pulse 2s infinite;
 }
 
 /* Source: https://www.florin-pop.com/blog/2019/03/css-pulse-effect/ */
 @keyframes pulse {
   0% {
     transform: scale(0.95);
-    /* box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7); */
-    box-shadow: 0 0 0 0 rgba(225, 197, 38, 0.7);
+    box-shadow: 0 0 0 0 rgba(255, 235, 59, 0.7);
   }
 
   70% {
@@ -134,10 +124,46 @@ h2 {
   }
 }
 
-a {
-  /* text-decoration: underline; */
-}
-
 strong {
   color: #1f6733;
+}
+
+.email-image {
+  width: 201px;
+  vertical-align: middle;
+}
+
+@media print {
+  body {
+    font-size: 10px;
+  }
+
+  .content {
+    margin-bottom: 0;
+  }
+
+  .header {
+    padding-top: 1.5em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.25em;
+    margin-bottom: 0.5em;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .footer-lower {
+    display: none;
+  }
+
+  .email-image {
+    width: 125px;
+  }
 }
