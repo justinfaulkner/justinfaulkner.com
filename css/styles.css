@@ -33,6 +33,12 @@ body {
   justify-content: center;
 }
 
+.footer-content {
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .header .content {
   width: 1000px;
   margin: auto;
@@ -94,7 +100,6 @@ h2 {
   padding-left: 0.28em;
   padding-right: 0.28em;
   margin-left: 0.28em;
-  line-height: 1.1em;
   transform: scale(1);
   cursor: pointer;
 }
@@ -127,7 +132,7 @@ strong {
 }
 
 .email-image {
-  width: 201px;
+  width: 409px;
   vertical-align: middle;
 }
 
@@ -137,7 +142,7 @@ strong {
 
 @media print {
   body {
-    font-size: 10px;
+    font-size: 11px;
   }
 
   .content {
@@ -148,10 +153,11 @@ strong {
     padding-top: 2em;
     background-color: white;
     padding-bottom: 0.25em;
+    border-top: 7px solid #64816d;
   }
 
   .header-border {
-    height: 7px;
+    display: none;
   }
 
   h1 {
@@ -172,7 +178,7 @@ strong {
   }
 
   .email-image {
-    width: 110px;
+    width: 260px;
   }
 
   .sections dd {
@@ -186,4 +192,30 @@ strong {
   .print-only {
     display: block;
   }
+
+  .non-print {
+    display: none;
+  }
+
+  .more {
+    display: inline;
+    background-color: initial;
+    font-family: initial;
+    font-size: 1em;
+    font-style: normal;
+    padding-left: initial;
+    padding-right: initial;
+    margin-left: initial;
+    transform: scale(1);
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  /* .more:before {
+    content: "<";
+  }
+
+  .more:after {
+    content: ">";
+  } */
 }
