@@ -40,6 +40,24 @@ body {
   justify-content: space-between;
 }
 
+.footer-content a {
+  white-space: nowrap;
+  text-decoration: underline;
+}
+
+.footer-content .left {
+  white-space: nowrap;
+}
+
+.footer-content .right {
+  text-align: right;
+}
+
+.footer-content .right a:not(:last-child):after {
+  content: "|";
+  margin-left: 0.25em;
+}
+
 .header .content {
   width: 1000px;
   max-width: 90%;
@@ -151,6 +169,14 @@ strong {
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     font-size: 0.9em;
+  }
+
+  .footer-content .right a {
+    display: block;
+  }
+
+  .footer-content .right a:not(:last-child):after {
+    display: none;
   }
 }
 
